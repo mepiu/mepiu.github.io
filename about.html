@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mary's Designs'</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/mystyles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <style>
+        body, h1, h2, h3, h4, h5 {
+            font-family: "Poppins", sans-serif
+        }
+
+        body {
+            font-size: 16px;
+        }
+
+        .w3-half img {
+            margin-bottom: -6px;
+            margin-top: 16px;
+            opacity: 0.8;
+            cursor: pointer
+        }
+
+            .w3-half img:hover {
+                opacity: 1
+            }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
+        <br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+        <div class="w3-container">
+            <h3 class="w3-padding-64"><b>MARYS<br>DESIGNS</b></h3>
+        </div>
+        <div class="w3-bar-block">
+            <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+            <a href="showcase.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Showcase</a>
+            <a href="services.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a>
+            <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Designers</a>
+            <a href="letsgoshop.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Packages</a>
+            <a href="contactus.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+        <span>Mary's Designs'</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+        <!-- Header -->
+        <!--div class="w3-container" style="margin-top:80px" id="showcase">
+            <h1 class="w3-jumbo"><b>Interior Design</b></h1>
+            <h1 class="w3-xxxlarge w3-text-red"><b>Showcase.</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+        </div>
+
+        <!-- Photo grid (modal) >
+        <div class="w3-row-padding">
+            <div class="w3-half">
+                <img src="https://www.w3schools.com/w3images/kitchenconcrete.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+                <img src="https://www.w3schools.com/w3images/livingroom.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+                <img src="https://www.w3schools.com/w3images/diningroom.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+            </div>
+
+            <div class="w3-half">
+                <img src="https://www.w3schools.com/w3images/atrium.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+                <img src="https://www.w3schools.com/w3images/bedroom.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+                <img src="https://www.w3schools.com/w3images/livingroom2.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+            </div>
+        </div>
+
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+            <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption"></p>
+            </div>
+        </div>
+
+        <!-- Services -->
+        <!--div class="w3-container" id="services" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Services.</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+            <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+            <p>
+                Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div-->
+
+        <!-- Designers -->
+      <div class="w3-container" id="designers" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Designers.</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+        <p>The best team in the world.</p>
+            <p>
+          &nbsp; &nbsp;&nbsp;Our team is made up of highly-trained interior designers who have decades of experience in the industry. They are dedicated to providing high-quality designs that will meet your needs and exceed your expectations.&nbsp;At Mary's designs, we believe that your home should be a reflection of your style, and that it should be designed to reflect your needs and desires. Our designers will help you find the best solutions for your home, whether you're looking for an upgrade or just need some help with something small.</p>
+          
+        </div>
+
+        <!-- The Team -->
+        <div class="w3-row-padding w3-grayscale">
+          <div class="w3-col m4 w3-margin-bottom">
+                <div class="w3-light-grey">
+                    <img src="assets/imgs/mry.png" alt="John" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Mary Oluka&nbsp;</h3>
+                        <p class="w3-opacity">CEO & Founder</p>
+                        <p>&nbsp;Mary's Designs, Inc. CEO was born in North Carolina, where she attended Panther Creek. She went on to study Interior design at Yale University, then moved back home after graduation and began working as an interior designer for several local firms before founding her own company.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col m4 w3-margin-bottom">
+                <div class="w3-light-grey">
+                  <img src="assets/imgs/rd.png" alt="Jane" style="width:100%">
+                    <div class="w3-container">
+                        <h3>David Back</h3>
+                        <p class="w3-opacity">Designer</p>
+                        <p>David Back is a well known designer and had been in this field for the over 15 years.&nbsp; &nbsp;</p>
+                  </div>
+              </div>
+          </div>
+            <div class="w3-col m4 w3-margin-bottom">
+                <div class="w3-light-grey">
+                  <img src="assets/imgs/em.png" alt="Mike" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Mike Roger</h3>
+                        <p class="w3-opacity">Architect</p>
+                        <p>Mike Roger has a doctorate in artirecture with over 10 years experience so you will be in great hands!</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Packages / Pricing Tables -->
+      <div class="w3-container" id="packages" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-red"><b>The Best Team&nbsp;&nbsp;</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+          <p>&nbsp;Our team of designers will work with you from start to finish: we'll help you choose colors and finishes that are right for your lifestyle, then we'll provide samples of those colors so that you can see them in person before making any final decisions about paint colors or flooring materials. Once decisions are made about the overall look of the space, we'll take care of all the details: from designing custom furniture pieces like desks or entertainment centers that fit seamlessly into your existing decor; to helping select just the right paint colors for walls and ceilings; even down to choosing just the right lighting fixtures so that every room feels cozy when guests arrive—we've got this covered!</p>
+        </div>
+
+       
+
+        <!-- End page content -->
+    </div>
+
+    <!-- W3.CSS Container -->
+    <!-- CSS Container -->
+    <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Made with <a href="https://www.w3schools.com/spaces" title="(c)MARYS DESIGNS(r)" target="_blank" class="w3-hover-opacity">MARYS DESIGNS</a></p></div>
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+    </script>
+
+</body>
+</html>
