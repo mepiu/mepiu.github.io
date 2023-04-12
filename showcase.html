@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Mary's Designs - Showcase</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/mystyles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <style>
+        body, h1, h2, h3, h4, h5 {
+            font-family: "Poppins", sans-serif
+        }
+
+        body {
+            font-size: 16px;
+        }
+
+        .w3-half img {
+            margin-bottom: -6px;
+            margin-top: 16px;
+            opacity: 0.8;
+            cursor: pointer
+        }
+
+            .w3-half img:hover {
+                opacity: 1
+            }
+    </style>
+</head>
+<body>
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
+        <br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+        <div class="w3-container">
+            <h3 class="w3-padding-64"><b>MARYS<br>DESIGNS</b></h3>
+        </div>
+        <div class="w3-bar-block">
+            <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+            <a href="showcase.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Showcase</a>
+            <a href="services.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a>
+            <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Designers</a>
+            <a href="letsgoshop.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Packages</a>
+            <a href="contactus.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+        <span>MARYS DESIGNS</span>
+    </header>
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+        <!-- Header -->
+        <div class="w3-container" style="margin-top:80px" id="showcase">
+            <h1 class="w3-jumbo"><b>Interior Design</b></h1>
+            <h1 class="w3-xxxlarge w3-text-red"><b>Showcase.</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+        </div>
+
+        <!-- Photo grid (modal) -->
+        <div class="w3-row-padding">
+            <img src="assets/imgs/colors.png" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+            <div class="w3-container">
+                        <h3>At Marys Designs</h3>
+              
+                        <p>&nbsp;Our team of designers will work with you from start to finish: we'll help you choose colors and finishes that are right for your lifestyle, then we'll provide samples of those colors so that you can see them in person before making any final decisions about paint colors or flooring materials.</p>
+                        <p>We believe that the home you live in should be a reflection of your own personality. We want to help you express yourself through your home—and we want to make sure that it's a reflection of who you are and what you want. </p>
+
+            </div>
+          <img src="assets/imgs/designbed.png" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+            <div class="w3-container">
+                        <h3>Look At This Lovely Bedroom!&nbsp;</h3>
+                        
+              <p>&nbsp;When we work together, we'll come up with ideas together that will make sense for the look, feel, and function of your home.&nbsp;</p>
+              <p>And when you work with us at Mary's Designs, you can expect:&nbsp;</p>
+              <p>- A friendly and professional environment where everyone is committed to helping each other create beautiful spaces&nbsp;</p>
+              <p>- An experienced team with decades of combined experience in all aspects of design, construction, and maintenance&nbsp;</p>
+                        <p>- A passion for helping people create homes they love—and we love our customers so much that we even offer a lifetime guarantee</p>
+          </div>
+          <img src="assets/imgs/kidsbed.png" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+          <div class="w3-container">
+                        <h3>Lovely design&nbsp;</h3>
+            
+            <p>&nbsp;We know it can be hard to visualize what a finished product will look like, so we've brought together a team of experts who have worked on everything from modern homes to historic properties and everything in between. Our experts are ready to help you see what your dream home could look like!&nbsp;</p>
+                        <p>We believe that the best way to do this is by having an open-minded conversation about your goals for the space, what you like and don't like about it now, and what kinds of things would help you achieve your goals.</p>
+          </div>
+         </div>
+
+        <div class="w3-half">
+            <img src="assets/imgs/ftnmk4.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+            <div class="w3-container">
+                        
+          </div>
+          <img src="assets/imgs/ftnmk5.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+            <div class="w3-container">
+                        <h3>Gardening Designs&nbsp;</h3>
+                       
+                        <p>&nbsp;Then we'll help put together the perfect look for both the inside and outside of your house so that it reflects who you are as well as how much time and effort you want to put into making it look beautiful!</p>
+          </div>
+          <img src="assets/imgs/kidstwo.png" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+          <div class="w3-container">
+            <h3>Cozy Girl's room&nbsp;</h3>
+            
+                      <p>&nbsp; All our ideas are finalized and approved by our clients as we get started on construction!</p>
+                  </div>
+        </div>
+        </div>
+
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+            <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption"></p>
+            </div>
+        </div>
+</div>
+</body>
+</html>
